@@ -15,3 +15,7 @@ Why doesn't the failing message get sent to the error queue? Surely after a coup
 - Add a todo item in the client
 
 You may use the `LearningTransport` or any other transport if you need. RabbitMQ was used so we may be able to visualize the growth of the queue.
+
+Below is the graph that shows the number of duplicate messages we got in the queue. We have observed that the more messages a handler dispatches the faster the queue grows.
+
+![image](img/image.png)
