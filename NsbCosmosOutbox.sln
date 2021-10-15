@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NServiceBus.Persistence.CosmosDB", "Src\NServiceBus.Persistence.CosmosDB\NServiceBus.Persistence.CosmosDB.csproj", "{675A358E-E2A6-4636-BAA1-0920D5F87B09}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{8F0A74F5-BB17-4085-A76A-908D18FD24FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NsbCosmosOutbox.Client", "Src\NsbCosmosOutbox.Client\NsbCosmosOutbox.Client.csproj", "{1B2A66DB-A67D-437B-AA03-21E5E408E8BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NsbCosmosOutbox.Worker", "Src\NsbCosmosOutbox.Worker\NsbCosmosOutbox.Worker.csproj", "{1BE0DC52-2A65-47B1-9D59-CD3216D67441}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NsbCosmosOutbox.Shared", "Src\NsbCosmosOutbox.Shared\NsbCosmosOutbox.Shared.csproj", "{B442BBCA-3CBE-4F2F-9E55-7E8F5D03E84B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{675A358E-E2A6-4636-BAA1-0920D5F87B09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{675A358E-E2A6-4636-BAA1-0920D5F87B09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{675A358E-E2A6-4636-BAA1-0920D5F87B09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{675A358E-E2A6-4636-BAA1-0920D5F87B09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B2A66DB-A67D-437B-AA03-21E5E408E8BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B2A66DB-A67D-437B-AA03-21E5E408E8BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B2A66DB-A67D-437B-AA03-21E5E408E8BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B2A66DB-A67D-437B-AA03-21E5E408E8BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BE0DC52-2A65-47B1-9D59-CD3216D67441}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BE0DC52-2A65-47B1-9D59-CD3216D67441}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BE0DC52-2A65-47B1-9D59-CD3216D67441}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BE0DC52-2A65-47B1-9D59-CD3216D67441}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B442BBCA-3CBE-4F2F-9E55-7E8F5D03E84B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B442BBCA-3CBE-4F2F-9E55-7E8F5D03E84B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B442BBCA-3CBE-4F2F-9E55-7E8F5D03E84B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B442BBCA-3CBE-4F2F-9E55-7E8F5D03E84B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1B2A66DB-A67D-437B-AA03-21E5E408E8BC} = {8F0A74F5-BB17-4085-A76A-908D18FD24FD}
+		{1BE0DC52-2A65-47B1-9D59-CD3216D67441} = {8F0A74F5-BB17-4085-A76A-908D18FD24FD}
+		{B442BBCA-3CBE-4F2F-9E55-7E8F5D03E84B} = {8F0A74F5-BB17-4085-A76A-908D18FD24FD}
+	EndGlobalSection
+EndGlobal

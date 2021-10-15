@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NServiceBus" Version="[7.1.10, 8.0.0)" />
+    <PackageReference Include="Microsoft.Azure.Cosmos" Version="[3.20.1, 4)" />
+  </ItemGroup>
+
+</Project>
