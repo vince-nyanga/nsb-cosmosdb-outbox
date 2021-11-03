@@ -6,6 +6,8 @@ We occasionally get an exponential grown of duplicate messages in our queue (Azu
 
 Eventually we found it. If we throw an exception in the [SetAsDispatched](https://github.com/vince-nyanga/nsb-cosmosdb-outbox/blob/b80366163cd841a8305175900971a3eacd956e5e/Src/NServiceBus.Persistence.CosmosDB/Outbox/OutboxPersister.cs?_pjax=%23js-repo-pjax-container%2C%20div%5Bitemtype%3D%22http%3A%2F%2Fschema.org%2FSoftwareSourceCode%22%5D%20main%2C%20%5Bdata-pjax-container%5D#L73) method inside the `OutboxPersister` class, we get an infinite number of retries which leads to the exponential growth of messages as indicated above.
 
+**Note**: Our retry policy is 3 immediate retries and 5 delayed retries but the number of retries we get far exceeeds this.
+
 ### The Question We Have
 Why doesn't the failing message get sent to the error queue? Surely after a couple of retries it should end up in the error queue.
 
